@@ -5,13 +5,13 @@ export interface User {
   avatarUrl?: string;
 }
 
-export interface Course {
+export interface Department {
   id: string;
   name: string;
-  teacher: string;
-  grade: string;
-  period: number;
-  progress: number;
+  headOfDepartment: string;
+  status: string;
+  facultyCode: number;
+  budgetUtilization: number;
 }
 
 export interface Announcement {
@@ -22,10 +22,10 @@ export interface Announcement {
   author: string;
 }
 
-export interface Assignment {
+export interface AdminTask {
   id: string;
   title: string;
-  course: string;
+  department: string;
   dueDate: string;
-  isOverdue: boolean;
+  requiresAction: boolean;
 }

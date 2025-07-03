@@ -4,8 +4,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Horizon High Student Portal",
-  description: "Your central hub for courses, grades, and announcements.",
+  title: "SavannahTech University Admin Portal",
+  description: "Administrative portal for SavannahTech University.",
 };
 
 export default function RootLayout({

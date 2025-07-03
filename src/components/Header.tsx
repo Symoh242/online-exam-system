@@ -12,20 +12,20 @@ export function Header() {
           <div className="p-2 bg-primary/20 rounded-lg">
             <GraduationCap className="w-6 h-6 text-primary" />
           </div>
-          <h1 className="text-2xl font-bold tracking-tight">Horizon High</h1>
+          <h1 className="text-2xl font-bold tracking-tight">SavannahTech Admin</h1>
         </Link>
         <nav className="hidden md:flex items-center gap-2">
           <Button variant="ghost" asChild>
             <Link href="/">Dashboard</Link>
           </Button>
           <Button variant="ghost" asChild>
-            <Link href="/courses">Courses</Link>
+            <Link href="/courses">Departments</Link>
           </Button>
           <Button variant="ghost" asChild>
-            <Link href="/grades">Grades</Link>
+            <Link href="/staff">Staff</Link>
           </Button>
           <Button variant="ghost" asChild>
-            <Link href="/calendar">Calendar</Link>
+            <Link href="/admissions">Admissions</Link>
           </Button>
         </nav>
         <div className="flex items-center gap-4">

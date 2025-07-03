@@ -12,13 +12,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { mockCourses, mockAnnouncements, mockAssignments } from "@/lib/mock-data";
-import { ArrowRight, BookOpen, ClipboardCheck, AlertTriangle, Megaphone } from "lucide-react";
+import { mockDepartments, mockAnnouncements, mockAdminTasks } from "@/lib/mock-data";
+import { ArrowRight, Building, CheckSquare, AlertTriangle, Megaphone } from "lucide-react";
 import Link from "next/link";
 
 
 export default function DashboardPage() {
-  const overdueAssignments = mockAssignments.filter(a => a.isOverdue).length;
+  const urgentAlerts = mockAdminTasks.filter(a => a.requiresAction).length;
 
   return (
     <div className="flex flex-col min-h-screen bg-background">
@@ -28,38 +28,38 @@ export default function DashboardPage() {
           <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
             <div>
               <h1 className="text-3xl font-bold tracking-tight">Welcome Back, Mathew!</h1>
-              <p className="text-muted-foreground">Here’s your dashboard for today.</p>
+              <p className="text-muted-foreground">Here’s your administrative dashboard.</p>
             </div>
           </div>
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-sm font-medium">Courses Enrolled</CardTitle>
-                <BookOpen className="w-4 h-4 text-muted-foreground" />
+                <CardTitle className="text-sm font-medium">Total Departments</CardTitle>
+                <Building className="w-4 h-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{mockCourses.length}</div>
-                <p className="text-xs text-muted-foreground">This semester</p>
+                <div className="text-2xl font-bold">{mockDepartments.length}</div>
+                <p className="text-xs text-muted-foreground">Across all faculties</p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-sm font-medium">Upcoming Assignments</CardTitle>
-                <ClipboardCheck className="w-4 h-4 text-muted-foreground" />
+                <CardTitle className="text-sm font-medium">Pending Tasks</CardTitle>
+                <CheckSquare className="w-4 h-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{mockAssignments.filter(a => !a.isOverdue).length}</div>
-                <p className="text-xs text-muted-foreground">{mockAssignments.length} total assignments</p>
+                <div className="text-2xl font-bold">{mockAdminTasks.filter(a => !a.requiresAction).length}</div>
+                <p className="text-xs text-muted-foreground">{mockAdminTasks.length} total tasks</p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-sm font-medium">Overdue Assignments</CardTitle>
+                <CardTitle className="text-sm font-medium">Urgent Alerts</CardTitle>
                 <AlertTriangle className="w-4 h-4 text-destructive" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold text-destructive">{overdueAssignments}</div>
+                <div className="text-2xl font-bold text-destructive">{urgentAlerts}</div>
                 <p className="text-xs text-muted-foreground">Action required</p>
               </CardContent>
             </Card>
@@ -68,20 +68,20 @@ export default function DashboardPage() {
           <div className="grid gap-6 lg:grid-cols-5">
             <Card className="lg:col-span-3">
               <CardHeader className="flex flex-row items-center justify-between">
-                <CardTitle>My Courses</CardTitle>
+                <CardTitle>Department Overview</CardTitle>
                 <Button variant="ghost" size="sm" asChild>
-                  <Link href="/courses">View All <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  <Link href="/courses">View All Departments <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {mockCourses.slice(0, 4).map((course) => (
-                    <div key={course.id} className="flex items-center justify-between p-3 rounded-lg bg-secondary/50">
+                  {mockDepartments.slice(0, 4).map((dept) => (
+                    <div key={dept.id} className="flex items-center justify-between p-3 rounded-lg bg-secondary/50">
                       <div>
-                        <p className="font-semibold">{course.name}</p>
-                        <p className="text-sm text-muted-foreground">Period {course.period} - {course.teacher}</p>
+                        <p className="font-semibold">{dept.name}</p>
+                        <p className="text-sm text-muted-foreground">{dept.headOfDepartment}</p>
                       </div>
-                      <Badge variant="outline" className="text-lg">{course.grade}</Badge>
+                      <Badge variant="outline" className="text-lg">{dept.status}</Badge>
                     </div>
                   ))}
                 </div>
