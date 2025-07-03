@@ -1,32 +1,30 @@
 
-export interface ExamOption {
+export interface User {
+  name: string;
   id: string;
-  text: string;
+  avatarUrl?: string;
 }
 
-export interface ExamQuestion {
+export interface Course {
   id: string;
-  text: string;
-  topic: string;
-  options: ExamOption[];
-  correctAnswerId: string;
+  name: string;
+  teacher: string;
+  grade: string;
+  period: number;
 }
 
-export interface Exam {
+export interface Announcement {
+  id: string;
   title: string;
-  timeLimit: number; // in seconds
-  questions: ExamQuestion[];
+  content: string;
+  date: string;
+  author: string;
 }
 
-export type Answers = Record<string, string>; // { [questionId]: answerId }
-
-export interface ExamResult {
-  score: number;
-  correctAnswers: number;
-  incorrectAnswers: number;
-  totalQuestions: number;
-  timeTaken: number; // in seconds
-  strengths: string[];
-  weaknesses: string[];
-  answers: Answers;
+export interface Assignment {
+  id: string;
+  title: string;
+  course: string;
+  dueDate: string;
+  isOverdue: boolean;
 }

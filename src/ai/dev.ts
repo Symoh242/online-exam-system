@@ -1,4 +1,2 @@
-import { config } from 'dotenv';
-config();
-
-import '@/ai/flows/generate-personalized-feedback.ts';
+// This file is no longer in use.
+export {};
