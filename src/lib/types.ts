@@ -11,6 +11,7 @@ export interface Course {
   teacher: string;
   grade: string;
   period: number;
+  progress: number;
 }
 
 export interface Announcement {

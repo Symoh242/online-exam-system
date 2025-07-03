@@ -12,27 +12,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import type { Course, Announcement, Assignment } from "@/lib/types";
+import { mockCourses, mockAnnouncements, mockAssignments } from "@/lib/mock-data";
 import { ArrowRight, BookOpen, ClipboardCheck, AlertTriangle, Megaphone } from "lucide-react";
 import Link from "next/link";
 
-const mockCourses: Course[] = [
-  { id: '1', name: 'Advanced Calculus', teacher: 'Mrs. Davis', grade: 'A-', period: 1 },
-  { id: '2', name: 'AP Physics', teacher: 'Mr. Smith', grade: 'B+', period: 2 },
-  { id: '3', name: 'Modern World History', teacher: 'Mr. Jones', grade: 'A', period: 4 },
-  { id: '4', name: 'English Literature', teacher: 'Ms. Williams', grade: 'A-', period: 5 },
-];
-
-const mockAnnouncements: Announcement[] = [
-  { id: '1', title: 'Spirit Week Next Week!', content: 'Get ready for a week of fun-filled activities and dress-up days.', date: '2 days ago', author: 'Principal Miller' },
-  { id: '2', title: 'Parent-Teacher Conferences', content: 'Sign-ups are now open for parent-teacher conferences on Nov 15th.', date: '4 days ago', author: 'Main Office' },
-];
-
-const mockAssignments: Assignment[] = [
-    { id: '1', title: 'Chapter 5 Problem Set', course: 'AP Physics', dueDate: 'Tomorrow', isOverdue: false },
-    { id: '2', title: 'The Great Gatsby Essay', course: 'English Literature', dueDate: '3 days', isOverdue: false },
-    { id: '3', title: 'Historical Analysis Paper', course: 'Modern World History', dueDate: '1 day ago', isOverdue: true },
-];
 
 export default function DashboardPage() {
   const overdueAssignments = mockAssignments.filter(a => a.isOverdue).length;
@@ -92,7 +75,7 @@ export default function DashboardPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
-                  {mockCourses.map((course) => (
+                  {mockCourses.slice(0, 4).map((course) => (
                     <div key={course.id} className="flex items-center justify-between p-3 rounded-lg bg-secondary/50">
                       <div>
                         <p className="font-semibold">{course.name}</p>
