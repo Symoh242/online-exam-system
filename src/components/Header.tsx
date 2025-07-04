@@ -1,42 +1,41 @@
 
 import Link from 'next/link';
-import { GraduationCap, Bell } from 'lucide-react';
+import { GraduationCap, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 
 export function Header() {
   return (
-    <header className="py-3 px-4 sm:px-6 md:px-8 border-b border-border/40 sticky top-0 bg-background/95 backdrop-blur-sm z-10">
+    <header className="py-4 px-4 sm:px-6 md:px-8 border-b bg-white sticky top-0 z-10">
       <div className="container mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 text-foreground hover:text-primary transition-colors">
-          <div className="p-2 bg-primary/20 rounded-lg">
-            <GraduationCap className="w-6 h-6 text-primary" />
-          </div>
-          <h1 className="text-2xl font-bold tracking-tight">SavannahTech Admin</h1>
+        <Link href="/" className="flex items-center gap-2 text-xl font-bold text-foreground">
+          <GraduationCap className="w-7 h-7 text-primary" />
+          XYZ University
         </Link>
-        <nav className="hidden md:flex items-center gap-2">
-          <Button variant="ghost" asChild>
-            <Link href="/">Dashboard</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/courses">Departments</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/staff">Staff</Link>
-          </Button>
-          <Button variant="ghost" asChild>
-            <Link href="/admissions">Admissions</Link>
-          </Button>
+        <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+          <DropdownMenu>
+            <DropdownMenuTrigger className="flex items-center gap-1 hover:text-primary transition-colors outline-none">
+              Categories <ChevronDown className="w-4 h-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>Exams</DropdownMenuItem>
+              <DropdownMenuItem>Admissions</DropdownMenuItem>
+              <DropdownMenuItem>Student Portal</DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+          <Link href="/" className="text-primary border-b-2 border-primary pb-1">
+            Home
+          </Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon">
-            <Bell className="w-5 h-5" />
-            <span className="sr-only">Notifications</span>
+          <Button variant="outline" asChild>
+             <Link href="#">Log In</Link>
           </Button>
-          <Avatar>
-            <AvatarImage src="https://placehold.co/40x40" alt="Mathew Ndeto" data-ai-hint="profile picture" />
-            <AvatarFallback>MN</AvatarFallback>
-          </Avatar>
         </div>
       </div>
     </header>
