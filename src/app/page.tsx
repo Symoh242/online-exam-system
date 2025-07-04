@@ -41,7 +41,9 @@ export default function LandingPage() {
                         </p>
                     </CardContent>
                     <CardFooter className="justify-center">
-                        <Button variant="outline">Log In</Button>
+                        <Button variant="outline" asChild>
+                          <Link href="/courses">Log In</Link>
+                        </Button>
                     </CardFooter>
                  </Card>
 
@@ -58,7 +60,9 @@ export default function LandingPage() {
                         </p>
                     </CardContent>
                     <CardFooter className="justify-center">
-                         <Button variant="outline">Watch Video</Button>
+                         <Button variant="outline" asChild>
+                           <Link href="/tutorials">Watch Video</Link>
+                         </Button>
                     </CardFooter>
                  </Card>
                  
@@ -75,7 +79,9 @@ export default function LandingPage() {
                         </p>
                     </CardContent>
                     <CardFooter className="justify-center">
-                         <Button variant="outline">Learn More</Button>
+                         <Button variant="outline" asChild>
+                           <Link href="/help">Learn More</Link>
+                         </Button>
                     </CardFooter>
                  </Card>
             </div>

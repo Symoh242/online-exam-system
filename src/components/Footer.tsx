@@ -12,9 +12,9 @@ export function Footer() {
         <div>
           <h3 className="font-bold mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            <li><Link href="#" className="hover:underline">How to Log In</Link></li>
-            <li><Link href="#" className="hover:underline">Tutorials</Link></li>
-            <li><Link href="#" className="hover:underline">Online Helpdesk</Link></li>
+            <li><Link href="/courses" className="hover:underline">How to Log In</Link></li>
+            <li><Link href="/tutorials" className="hover:underline">Tutorials</Link></li>
+            <li><Link href="/help" className="hover:underline">Online Helpdesk</Link></li>
           </ul>
         </div>
         <div>

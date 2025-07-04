@@ -1,5 +1,7 @@
+'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { GraduationCap, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import {
@@ -7,9 +9,12 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
+import { cn } from '@/lib/utils';
 
 export function Header() {
+  const pathname = usePathname();
+
   return (
     <header className="py-4 px-4 sm:px-6 md:px-8 border-b bg-white sticky top-0 z-10">
       <div className="container mx-auto flex items-center justify-between">
@@ -23,18 +28,27 @@ export function Header() {
               Categories <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem>Exams</DropdownMenuItem>
-              <DropdownMenuItem>Admissions</DropdownMenuItem>
-              <DropdownMenuItem>Student Portal</DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/exam">Exams</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/admissions">Admissions</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link href="/courses">Student Portal</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Link href="/" className="text-primary border-b-2 border-primary pb-1">
+          <Link href="/" className={cn(
+            "transition-colors hover:text-primary pb-1",
+            pathname === "/" ? "text-primary border-b-2 border-primary" : "text-foreground"
+          )}>
             Home
           </Link>
         </nav>
         <div className="flex items-center gap-4">
           <Button variant="outline" asChild>
-             <Link href="#">Log In</Link>
+             <Link href="/courses">Log In</Link>
           </Button>
         </div>
       </div>
