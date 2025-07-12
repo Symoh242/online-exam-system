@@ -42,7 +42,7 @@ export default function LandingPage() {
                     </CardContent>
                     <CardFooter className="justify-center">
                         <Button variant="outline" asChild>
-                          <Link href="/courses">Log In</Link>
+                          <Link href="/login">Log In</Link>
                         </Button>
                     </CardFooter>
                  </Card>

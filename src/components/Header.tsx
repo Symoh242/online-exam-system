@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -48,7 +49,7 @@ export function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <Button variant="outline" asChild>
-             <Link href="/courses">Log In</Link>
+             <Link href="/login">Log In</Link>
           </Button>
         </div>
       </div>
