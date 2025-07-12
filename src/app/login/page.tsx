@@ -32,7 +32,7 @@ export default function LoginPage() {
   return (
     <div className="flex flex-col min-h-screen bg-slate-50">
       <Header />
-      <main className="flex-1 flex items-center justify-center">
+      <main className="flex-1 flex items-center justify-center p-4">
         <Card className="w-full max-w-md">
           <CardHeader>
             <CardTitle className="text-2xl">Login</CardTitle>
@@ -41,11 +41,11 @@ export default function LoginPage() {
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="john.doe@xyz.ac.ke" />
+              <Input id="email" type="email" placeholder="john.doe@xyz.ac.ke" required />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>
-              <Input id="password" type="password" />
+              <Input id="password" type="password" required />
             </div>
             <div className="space-y-2">
               <Label htmlFor="role">Role</Label>
