@@ -88,7 +88,7 @@ export const semesters = [
 export const studentDashboardData = {
   student: {
     name: "John Student",
-    id: "No. BT/03/KP/2240/2020",
+    id: "No. UN/01/2345/2024",
     year: "YEAR 1 JANUARY 2022",
     balance: "-19,870.00/-",
   },
