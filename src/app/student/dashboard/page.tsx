@@ -166,7 +166,7 @@ export default function StudentDashboard() {
                 </CardHeader>
                 <CardContent>
                   <div className="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4" role="alert">
-                    <p className="font-bold">School fees is payable to the university account through a bankers cheque or cash deposit ACCOUNT NAME: Lukenya University BANK: KCB BRANCH: Mtito Andei ACCOUNT No. 1179910354 NB: CASH and/or Personal cheques will not be accepted.</p>
+                    <p className="font-bold">School fees are payable to the university bank account. Please refer to the official university documentation for account details. NB: CASH and/or Personal cheques will not be accepted.</p>
                   </div>
                 </CardContent>
               </Card>
