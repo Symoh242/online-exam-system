@@ -3,10 +3,9 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Facebook, Twitter, Youtube, Instagram, Search, ShieldCheck } from 'lucide-react';
+import { Facebook, Twitter, Youtube, Instagram, Search } from 'lucide-react';
 import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
-import Image from 'next/image';
 
 export function Header() {
   const pathname = usePathname();
@@ -48,7 +47,6 @@ export function Header() {
       </div>
       <div className="container mx-auto flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold text-gray-800">
-           <Image src="https://www.lukenyauniversity.ac.ke/wp-content/uploads/2021/11/logo-scaled.jpg" alt="Lukenya University Logo" width={50} height={50} />
           <span className="text-xl font-bold" style={{color: '#004400'}}>LUKENYA</span> <span className="text-xl font-bold" style={{color: '#888888'}}>UNIVERSITY</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
