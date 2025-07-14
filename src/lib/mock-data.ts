@@ -104,13 +104,13 @@ export const studentDashboardData = {
     { label: "Missing Mark Form", count: 1, href: "#" },
   ],
   results: [
-    { unitCode: "LBIT 1101", unitName: "ESSENTIALS OF MATHEMATICS", grade: "D" },
-    { unitCode: "LBIT 1201", unitName: "PROGRAMMING METHODOLOGY", grade: "F" },
-    { unitCode: "LBIT 2100", unitName: "MANAGEMENT MATHEMATICS", grade: "F" },
-    { unitCode: "LBIT 2101", unitName: "WEB DESIGN", grade: "A" },
-    { unitCode: "LBIT 2105", unitName: "SYSTEM ANALYSIS AND DESIGN", grade: "B" },
-    { unitCode: "LBIT 2201", unitName: "OBJECT ORIENTED PROGRAMMING I", grade: "F" },
-    { unitCode: "LBIT 3203", unitName: "SOFTWARE ENGINEERING", grade: "C" },
-    { unitCode: "LBIT 3204", unitName: "DECISION SUPPORT SYSTEMS", grade: "B" },
+    { unitCode: "COMP 101", unitName: "INTRODUCTION TO COMPUTING", grade: "D" },
+    { unitCode: "MATH 121", unitName: "CALCULUS I", grade: "F" },
+    { unitCode: "HIST 101", unitName: "WORLD HISTORY", grade: "F" },
+    { unitCode: "ENGL 110", unitName: "ENGLISH COMPOSITION", grade: "A" },
+    { unitCode: "SCI 201", unitName: "APPLIED PHYSICS", grade: "B" },
+    { unitCode: "COMP 210", unitName: "DATA STRUCTURES", grade: "F" },
+    { unitCode: "COMP 350", unitName: "ALGORITHMS", grade: "C" },
+    { unitCode: "BUSN 300", unitName: "INTRODUCTION TO MARKETING", grade: "B" },
   ]
 };
