@@ -73,26 +73,10 @@ export default function StudentLoginPage() {
                   </button>
                 </div>
                 
-                <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 rounded-full text-white font-bold py-3">
+                <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 rounded-full text-white font-bold py-3 mt-4">
                   LOGIN
                 </Button>
               </form>
-
-              <div className="flex items-center my-6">
-                <hr className="flex-grow border-t border-white/30" />
-                <span className="mx-4 text-sm">Or Continue With</span>
-                <hr className="flex-grow border-t border-white/30" />
-              </div>
-
-              <div className="space-y-4">
-                 <Button variant="outline" className="w-full bg-white text-black hover:bg-gray-200 rounded-full font-semibold py-3 flex items-center justify-center gap-2">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#4CAF50"/><path d="M16.2426 9.4998L11.2929 14.4495L7.75732 10.9139" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  SIGN IN WITH SNAPPLIFY
-                </Button>
-                <Button className="w-full bg-cyan-500 hover:bg-cyan-600 rounded-full text-white font-bold py-3">
-                  LOGIN WITH OTP
-                </Button>
-              </div>
 
             </div>
           </div>
