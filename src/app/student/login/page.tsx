@@ -25,7 +25,7 @@ export default function StudentLoginPage() {
       {/* Top Bar */}
       <header className="flex justify-between items-center p-4">
         <h1 className="text-lg font-semibold">WELCOME, PLEASE LOGIN.</h1>
-        <p className="text-sm">♦ Powered by Mzizi Enterprise ERP</p>
+        <p className="text-sm">♦ Powered by simon styles technologies</p>
       </header>
 
       <main className="flex items-center justify-center py-10">
@@ -35,7 +35,6 @@ export default function StudentLoginPage() {
             <div className="text-center">
               <span className="text-6xl font-bold" style={{color: '#004400'}}>UNNAMED</span>
               <span className="text-6xl font-bold" style={{color: '#FFFF00'}}> UNIVERSITY</span>
-              <p className="text-yellow-200 mt-2">Postera Crescam Laude</p>
             </div>
           </div>
 
