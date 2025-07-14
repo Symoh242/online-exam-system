@@ -2,29 +2,29 @@
 export const lecturers = [
   {
     id: 'lec001',
-    name: 'Dr. Evelyn Reed',
-    email: 'e.reed@university.ac.ke',
+    name: 'Dr. Alex Doe',
+    email: 'a.doe@university.ac.ke',
     department: 'Computer Science',
     status: 'Active',
   },
   {
     id: 'lec002',
-    name: 'Prof. Samuel Kariuki',
-    email: 's.kariuki@university.ac.ke',
+    name: 'Prof. Jane Smith',
+    email: 'j.smith@university.ac.ke',
     department: 'Business Administration',
     status: 'Active',
   },
   {
     id: 'lec003',
-    name: 'Dr. Aisha Khan',
-    email: 'a.khan@university.ac.ke',
+    name: 'Dr. Sam Wilson',
+    email: 's.wilson@university.ac.ke',
     department: 'Electrical Engineering',
     status: 'On Leave',
   },
   {
     id: 'lec004',
-    name: 'Dr. Ben Carter',
-    email: 'b.carter@university.ac.ke',
+    name: 'Dr. Chris Lee',
+    email: 'c.lee@university.ac.ke',
     department: 'Computer Science',
     status: 'Active',
   },
@@ -87,7 +87,7 @@ export const semesters = [
 
 export const studentDashboardData = {
   student: {
-    name: "Wanjiru Maina",
+    name: "John Student",
     id: "No. BT/03/KP/2240/2020",
     year: "YEAR 1 JANUARY 2022",
     balance: "-19,870.00/-",
