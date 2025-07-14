@@ -17,11 +17,11 @@ export default function LandingPage() {
         <section className="w-full border-b">
            <div className="relative h-[500px] w-full">
               <Image
-                src="https://lukenyauniversity.ac.ke/wp-content/uploads/2021/02/ED-1-1.jpg"
+                src="https://lukenyauniversity.ac.ke/files/2021/02/entrance-1-scaled.jpg"
                 fill
                 style={{objectFit: "cover"}}
-                alt="Unnamed University students in a class"
-                data-ai-hint="university students classroom"
+                alt="Unnamed University Entrance"
+                data-ai-hint="university entrance building"
                 priority
               />
             </div>
