@@ -33,7 +33,7 @@ export function Header() {
           <div className="flex items-center gap-4">
             <Link href="#" className="hover:underline">Library</Link>
             <Link href="/student/dashboard" className="hover:underline">Student Portal</Link>
-            <Link href="#" className="hover:underline">Marathon</Link>
+            <Link href="#" className="hover:underline">Charity</Link>
             <Link href="#" className="hover:underline">Virtual Campus</Link>
             <Link href="#" className="hover:underline">E-Learning Platform</Link>
           </div>
