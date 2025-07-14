@@ -17,11 +17,11 @@ export default function LandingPage() {
         <section className="w-full border-b">
            <div className="relative h-[500px] w-full">
               <Image
-                src="https://lukenyauniversity.ac.ke/files/2021/02/entrance-1-scaled.jpg"
+                src="https://law.riarauniversity.ac.ke/wp-content/uploads/2014/10/Riara-Law-School-Slide-2-scaled.jpeg"
                 fill
                 style={{objectFit: "cover"}}
-                alt="Unnamed University Entrance"
-                data-ai-hint="university entrance building"
+                alt="Riara Law School Building"
+                data-ai-hint="law school building"
                 priority
               />
             </div>

@@ -22,6 +22,12 @@ const nextConfig: NextConfig = {
         hostname: 'lukenyauniversity.ac.ke',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'law.riarauniversity.ac.ke',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
