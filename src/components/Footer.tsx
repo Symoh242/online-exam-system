@@ -1,8 +1,17 @@
 
+'use client';
 import Link from 'next/link';
 import { Facebook, Twitter, Youtube, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 export function Footer() {
+  const pathname = usePathname();
+
+  // Hide footer on the new student login page
+  if (pathname === '/student/login') {
+    return null;
+  }
+
   return (
     <footer className="bg-gray-800 text-white">
       <div className="container mx-auto py-12 px-4 sm:px-6 md:px-8">
@@ -23,7 +32,7 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="#" className="text-gray-400 hover:text-white">Student Portal</Link></li>
+              <li><Link href="/student/login" className="text-gray-400 hover:text-white">Student Portal</Link></li>
               <li><Link href="#" className="text-gray-400 hover:text-white">E-Learning</Link></li>
               <li><Link href="#" className="text-gray-400 hover:text-white">Downloads</Link></li>
               <li><Link href="#" className="text-gray-400 hover:text-white">Vacancies</Link></li>

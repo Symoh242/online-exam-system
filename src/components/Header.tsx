@@ -14,12 +14,17 @@ export function Header() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
     { href: "/academics", label: "Academics" },
-    { href: "/student-portal", label: "Student" },
+    { href: "/student/login", label: "Student Portal" },
     { href: "/kuccps", label: "KUCCPS" },
     { href: "/graduations", label: "Our Graduations" },
     { href: "/contact", label: "Contact Us" },
     { href: "/application", label: "Application Form" },
   ];
+
+  // Hide header on the new student login page
+  if (pathname === '/student/login') {
+    return null;
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
@@ -56,7 +61,8 @@ export function Header() {
               href={link.href}
               className={cn(
                 "transition-colors hover:text-green-600 pb-1 relative",
-                pathname === link.href ? "text-green-600" : "text-gray-600"
+                pathname === link.href ? "text-green-600" : "text-gray-600",
+                link.label === "Student Portal" && "font-bold" // Make student portal link stand out
               )}
             >
               {link.label}
