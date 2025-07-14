@@ -21,7 +21,8 @@ import {
   LogOut,
   Settings,
   X,
-  FileText
+  FileText,
+  PenSquare
 } from "lucide-react";
 import Link from "next/link";
 
@@ -32,6 +33,7 @@ const navItems = [
     { icon: Building, label: "Accommodation", href: "#" },
     { icon: MessageSquare, label: "Message Center", href: "#" },
     { icon: Video, label: "Live Lessons", href: "#" },
+    { icon: PenSquare, label: "Online Examination", href: "#" },
     { icon: User, label: "Profile", href: "#" },
 ];
 
