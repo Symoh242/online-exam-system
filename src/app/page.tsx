@@ -18,8 +18,8 @@ export default function LandingPage() {
            <div className="relative h-[500px] w-full">
               <Image
                 src="https://lukenyauniversity.ac.ke/files/2021/02/entrance-1-scaled.jpg"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{objectFit: "cover"}}
                 alt="Unnamed University Entrance"
                 data-ai-hint="university campus building"
                 priority
