@@ -22,6 +22,12 @@ const nextConfig: NextConfig = {
         hostname: 'law.riarauniversity.ac.ke',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
