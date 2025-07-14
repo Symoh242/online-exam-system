@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'law.riarauniversity.ac.ke',
+        hostname: '149818895.v2.pressablecdn.com',
         port: '',
         pathname: '/**',
       },
