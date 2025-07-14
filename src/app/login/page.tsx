@@ -41,7 +41,7 @@ export default function LoginPage() {
           <CardContent className="space-y-4">
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
-              <Input id="email" type="email" placeholder="john.doe@xyz.ac.ke" required />
+              <Input id="email" type="email" placeholder="john.doe@university.ac.ke" required />
             </div>
             <div className="space-y-2">
               <Label htmlFor="password">Password</Label>

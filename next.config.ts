@@ -16,12 +16,6 @@ const nextConfig: NextConfig = {
         hostname: 'placehold.co',
         port: '',
         pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.lukenyauniversity.ac.ke',
-        port: '',
-        pathname: '/**',
       }
     ],
   },

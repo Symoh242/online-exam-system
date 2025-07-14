@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Lukenya University",
-  description: "Lukenya University - Providing solutions through education, training, research and community service.",
+  title: "Unnamed University",
+  description: "Unnamed University - Providing solutions through education, training, research and community service.",
 };
 
 export default function RootLayout({

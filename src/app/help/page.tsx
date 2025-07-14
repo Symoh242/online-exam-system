@@ -1,3 +1,4 @@
+
 import { Header } from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -39,7 +40,7 @@ export default function HelpPage() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="email">Email</Label>
-                      <Input id="email" type="email" placeholder="john.doe@xyz.ac.ke" />
+                      <Input id="email" type="email" placeholder="john.doe@university.ac.ke" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">Message</Label>
