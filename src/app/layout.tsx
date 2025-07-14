@@ -23,6 +23,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased text-gray-800">
         {children}
+        <Footer />
         <Toaster />
       </body>
     </html>
