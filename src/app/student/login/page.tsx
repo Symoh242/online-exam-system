@@ -95,11 +95,6 @@ export default function StudentLoginPage() {
                 </Button>
               </div>
 
-              <div className="flex items-center mt-6">
-                <hr className="flex-grow border-t border-white/30" />
-                <span className="mx-4 text-xs text-center">Dial *456*9*5*5*1# if no message is received.</span>
-                <hr className="flex-grow border-t border-white/30" />
-              </div>
             </div>
           </div>
         </div>
