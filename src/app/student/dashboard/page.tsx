@@ -29,11 +29,11 @@ import Link from "next/link";
 const navItems = [
     { icon: Home, label: "Home", href: "#" },
     { icon: BookOpen, label: "Academics Information", href: "#" },
+    { icon: PenSquare, label: "Online Examination", href: "#" },
     { icon: DollarSign, label: "Finance Information", href: "#" },
     { icon: Building, label: "Accommodation", href: "#" },
     { icon: MessageSquare, label: "Message Center", href: "#" },
     { icon: Video, label: "Live Lessons", href: "#" },
-    { icon: PenSquare, label: "Online Examination", href: "#" },
     { icon: User, label: "Profile", href: "#" },
 ];
 
