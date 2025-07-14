@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Button } from "@/components/ui/button";
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Eye, EyeOff, Pencil } from 'lucide-react';
+import { Eye, EyeOff, Pencil, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 export default function StudentLoginPage() {
@@ -15,8 +15,6 @@ export default function StudentLoginPage() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // For now, just redirecting to the student dashboard.
-    // In a real app, you'd handle authentication here.
     router.push('/student/dashboard');
   };
 
@@ -35,6 +33,14 @@ export default function StudentLoginPage() {
             <div className="text-center">
               <span className="text-6xl font-bold" style={{color: '#004400'}}>UNNAMED</span>
               <span className="text-6xl font-bold" style={{color: '#FFFF00'}}> UNIVERSITY</span>
+              <div className="mt-8">
+                  <Link href="/">
+                      <Button variant="outline" className="bg-transparent text-white border-white hover:bg-white hover:text-green-800">
+                          <ArrowLeft className="mr-2 h-4 w-4" />
+                          Go Back Home
+                      </Button>
+                  </Link>
+              </div>
             </div>
           </div>
 
