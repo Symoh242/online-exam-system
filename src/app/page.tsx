@@ -7,13 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Header } from "@/components/Header";
 import Link from "next/link";
 import Image from "next/image";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import { Separator } from "@/components/ui/separator";
 
 export default function LandingPage() {
@@ -22,45 +15,16 @@ export default function LandingPage() {
       <Header />
       <main className="flex-1">
         <section className="w-full border-b">
-          <Carousel className="w-full" opts={{ loop: true }}>
-            <CarouselContent>
-              <CarouselItem>
-                <div className="relative h-[500px] w-full">
-                  <Image
-                    src="https://placehold.co/1920x500.png"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Hero Image 1"
-                    data-ai-hint="university campus building"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="relative h-[500px] w-full">
-                  <Image
-                    src="https://placehold.co/1920x500.png"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Hero Image 2"
-                    data-ai-hint="students studying library"
-                  />
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                 <div className="relative h-[500px] w-full">
-                  <Image
-                    src="https://placehold.co/1920x500.png"
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Hero Image 3"
-                    data-ai-hint="graduation ceremony students"
-                  />
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2" />
-          </Carousel>
+           <div className="relative h-[500px] w-full">
+              <Image
+                src="https://lukenyauniversity.ac.ke/files/2021/02/entrance-1-scaled.jpg"
+                layout="fill"
+                objectFit="cover"
+                alt="Unnamed University Entrance"
+                data-ai-hint="university campus building"
+                priority
+              />
+            </div>
         </section>
 
         <section className="w-full py-12 md:py-20 lg:py-24">
