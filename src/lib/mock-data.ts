@@ -83,4 +83,34 @@ export const semesters = [
         endDate: '2024-08-15',
         status: 'Completed'
     }
-]
+];
+
+export const studentDashboardData = {
+  student: {
+    name: "Wanjiru Maina",
+    id: "No. BT/03/KP/2240/2020",
+    year: "YEAR 1 JANUARY 2022",
+    balance: "-19,870.00/-",
+  },
+  transactions: [
+    { date: "2024-07-10", item: "Tuition Fee", amount: "-50,000.00", balance: "-19,870.00" },
+    { date: "2024-07-01", item: "Fee Payment", amount: "+30,130.00", balance: "130.00" },
+  ],
+  assignments: [
+    { label: "Announcements", count: 1, href: "#" },
+    { label: "Units On Offer", count: 2, href: "#" },
+    { label: "Special Exam Application Form", count: 1, href: "#" },
+    { label: "Suppl. Exam Application Form", count: 1, href: "#" },
+    { label: "Missing Mark Form", count: 1, href: "#" },
+  ],
+  results: [
+    { unitCode: "LBIT 1101", unitName: "ESSENTIALS OF MATHEMATICS", grade: "D" },
+    { unitCode: "LBIT 1201", unitName: "PROGRAMMING METHODOLOGY", grade: "F" },
+    { unitCode: "LBIT 2100", unitName: "MANAGEMENT MATHEMATICS", grade: "F" },
+    { unitCode: "LBIT 2101", unitName: "WEB DESIGN", grade: "A" },
+    { unitCode: "LBIT 2105", unitName: "SYSTEM ANALYSIS AND DESIGN", grade: "B" },
+    { unitCode: "LBIT 2201", unitName: "OBJECT ORIENTED PROGRAMMING I", grade: "F" },
+    { unitCode: "LBIT 3203", unitName: "SOFTWARE ENGINEERING", grade: "C" },
+    { unitCode: "LBIT 3204", unitName: "DECISION SUPPORT SYSTEMS", grade: "B" },
+  ]
+};

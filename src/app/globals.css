@@ -27,6 +27,15 @@
     --radius: 0.5rem;
     --chart-1: 222.2 47.4% 11.2%;
     --chart-2: 210 40% 96.1%;
+    
+    /* New dashboard colors */
+    --header-background: 201 80% 50%;
+    --header-foreground: 0 0% 100%;
+    --sidebar-background: 210 15% 22%; /* dark slate gray */
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-accent: 201 80% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 10% 30%;
   }
  
   .dark {
@@ -51,6 +60,15 @@
     --ring: 51 98% 50%;
     --chart-1: 51 98% 50%;
     --chart-2: 210 40% 96.1%;
+
+    /* New dashboard colors */
+    --header-background: 201 80% 50%;
+    --header-foreground: 0 0% 100%;
+    --sidebar-background: 210 15% 22%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-accent: 201 80% 50%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 10% 30%;
   }
 }
  
