@@ -2,28 +2,28 @@
 export const lecturers = [
   {
     id: 'lec001',
-    name: 'Dr. Alex Doe',
+    name: 'Dr. Judith Mwikali',
     email: 'a.doe@university.ac.ke',
     department: 'Computer Science',
     status: 'Active',
   },
   {
     id: 'lec002',
-    name: 'Prof. Jane Smith',
+    name: 'Prof. Dorcas Moraa',
     email: 'j.smith@university.ac.ke',
     department: 'Business Administration',
     status: 'Active',
   },
   {
     id: 'lec003',
-    name: 'Dr. Sam Wilson',
+    name: 'Dr. Arkan Issak,
     email: 's.wilson@university.ac.ke',
     department: 'Electrical Engineering',
     status: 'On Leave',
   },
   {
     id: 'lec004',
-    name: 'Dr. Chris Lee',
+    name: 'Dr.Khalid Ibrahim',
     email: 'c.lee@university.ac.ke',
     department: 'Computer Science',
     status: 'Active',
@@ -64,53 +64,52 @@ export const programs = [
 export const semesters = [
     {
         id: 'sem01',
-        name: '2024 September-December',
+        name: '2025 January-April',
         startDate: '2024-09-01',
         endDate: '2024-12-20',
-        status: 'Active'
+        status: 'Completed'
     },
     {
         id: 'sem02',
-        name: '2025 January-April',
+        name: '2025 May-August',
         startDate: '2025-01-05',
         endDate: '2025-04-25',
-        status: 'Upcoming'
+        status: 'Active'
     },
     {
         id: 'sem03',
-        name: '2024 May-August',
-        startDate: '2024-05-10',
-        endDate: '2024-08-15',
-        status: 'Completed'
+        name: '2025 September-December',
+        startDate: '2025-05-10',
+        endDate: '2025-08-15',
+        status: 'upcoming'
     }
 ];
 
 export const studentDashboardData = {
   student: {
-    name: "John Student",
+    name: "Paul student",
     id: "No. UN/01/2345/2024",
     year: "YEAR 1 JANUARY 2022",
-    balance: "-19,870.00/-",
+    balance: "0.00",
   },
   transactions: [
-    { date: "2024-07-10", item: "Tuition Fee", amount: "-50,000.00", balance: "-19,870.00" },
-    { date: "2024-07-01", item: "Fee Payment", amount: "+30,130.00", balance: "130.00" },
+    { date: "2024-07-10", item: "Tuition Fee", amount: "0.00", balance: "0.00" },
+    { date: "2024-07-01", item: "Fee Payment", amount: "0.00", balance: "0.00" },
   ],
   assignments: [
     { label: "Announcements", count: 1, href: "#" },
     { label: "Units On Offer", count: 2, href: "#" },
     { label: "Special Exam Application Form", count: 1, href: "#" },
-    { label: "Suppl. Exam Application Form", count: 1, href: "#" },
     { label: "Missing Mark Form", count: 1, href: "#" },
   ],
   results: [
-    { unitCode: "COMP 101", unitName: "INTRODUCTION TO COMPUTING", grade: "D" },
-    { unitCode: "MATH 121", unitName: "CALCULUS I", grade: "F" },
-    { unitCode: "HIST 101", unitName: "WORLD HISTORY", grade: "F" },
-    { unitCode: "ENGL 110", unitName: "ENGLISH COMPOSITION", grade: "A" },
-    { unitCode: "SCI 201", unitName: "APPLIED PHYSICS", grade: "B" },
-    { unitCode: "COMP 210", unitName: "DATA STRUCTURES", grade: "F" },
-    { unitCode: "COMP 350", unitName: "ALGORITHMS", grade: "C" },
-    { unitCode: "BUSN 300", unitName: "INTRODUCTION TO MARKETING", grade: "B" },
+    { unitCode: "COMP 101", unitName: "INTRODUCTION TO COMPUTING", grade: " " },
+    { unitCode: "MATH 121", unitName: "CALCULUS I", grade: " " },
+    { unitCode: "HIST 101", unitName: "WORLD HISTORY", grade: " " },
+    { unitCode: "ENGL 110", unitName: "ENGLISH COMPOSITION", grade: " " },
+    { unitCode: "SCI 201", unitName: "APPLIED PHYSICS", grade: " " },
+    { unitCode: "COMP 210", unitName: "DATA STRUCTURES", grade: " " },
+    { unitCode: "COMP 350", unitName: "ALGORITHMS", grade: " " },
+    { unitCode: "BUSN 300", unitName: "INTRODUCTION TO MARKETING", grade: " " },
   ]
 };
