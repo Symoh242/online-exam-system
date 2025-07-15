@@ -43,9 +43,9 @@ export function Footer() {
       <div className="container mx-auto py-12 px-4 sm:px-6 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-bold text-lg mb-4">About Unnamed</h3>
+            <h3 className="font-bold text-lg mb-4">About Online Platform</h3>
             <p className="text-sm text-gray-400">
-              Unnamed University is a premier institution of higher learning, committed to providing quality education, research, and community service.
+              Online Platform is a flexible digital platform of higher learning, committed to providing quality online academic experience.
             </p>
             <div className="flex space-x-4 mt-4">
               <Link href="#" className="text-gray-400 hover:text-white"><Facebook /></Link>
@@ -60,9 +60,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/student/login" className="text-gray-400 hover:text-white">Student Portal</Link></li>
               <li><Link href="#" className="text-gray-400 hover:text-white">E-Learning</Link></li>
-              <li><Link href="#" className="text-gray-400 hover:text-white">Downloads</Link></li>
-              <li><Link href="#" className="text-gray-400 hover:text-white">Vacancies</Link></li>
-              <li><Link href="#" className="text-gray-400 hover:text-white">Tenders</Link></li>
+            
             </ul>
           </div>
           <div>
@@ -79,15 +77,15 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 mt-1 shrink-0" />
-                <span className="text-gray-400">Main Campus, 123 University Drive, City, Country</span>
+                <span className="text-gray-400">Developed by, Matthew Ndeto and Simon Maina</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 shrink-0" />
-                <span className="text-gray-400">+123 456 7890 / +098 765 4321</span>
+                <span className="text-gray-400">+254113644272 / +254758673616</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 shrink-0" />
-                <span className="text-gray-400">info@university.ac.ke</span>
+                <span className="text-gray-400">matthewndeto655@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -97,7 +95,7 @@ export function Footer() {
         <div className="container mx-auto text-center text-sm text-gray-500">
           <div className="flex items-center justify-center animate-marquee whitespace-nowrap">
             <HorseIcon className="w-5 h-5 mr-3" />
-            <p>&copy; 2024 Unnamed University. All Rights Reserved.</p>
+            <p>&copy; 2025  Online Platform. All Rights Reserved.</p>
              <HorseIcon className="w-5 h-5 mx-3" />
             <p>Empowering the next generation of leaders.</p>
           </div>
