@@ -11,14 +11,8 @@ export function Header() {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/academics", label: "Academics" },
     { href: "/student/login", label: "Student Portal" },
-    { href: "/kuccps", label: "KUCCPS" },
-    { href: "/graduations", label: "Our Graduations" },
     { href: "/contact", label: "Contact Us" },
-    { href: "/application", label: "Application Form" },
   ];
 
   // Hide header on the new student login page
@@ -33,8 +27,6 @@ export function Header() {
           <div className="flex items-center gap-4">
             <Link href="#" className="hover:underline">Library</Link>
             <Link href="/student/dashboard" className="hover:underline">Student Portal</Link>
-            <Link href="#" className="hover:underline">Charity</Link>
-            <Link href="#" className="hover:underline">Virtual Campus</Link>
             <Link href="#" className="hover:underline">E-Learning Platform</Link>
           </div>
           <div className="flex items-center gap-4">
@@ -52,7 +44,7 @@ export function Header() {
       </div>
       <div className="container mx-auto flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold text-gray-800">
-          <span className="text-xl font-bold" style={{color: '#004400'}}>UNNAMED</span> <span className="text-xl font-bold" style={{color: '#888888'}}>UNIVERSITY</span>
+          <span className="text-xl font-bold" style={{color: '#004400'}}>Online</span> <span className="text-xl font-bold" style={{color: '#888888'}}>Platform</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
           {navLinks.map(link => (
