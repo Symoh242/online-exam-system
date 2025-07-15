@@ -12,7 +12,7 @@ export default function StudentPortal() {
                 Student Portal
               </h1>
               <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                Access your courses, grades, and university resources.
+                Access your courses, grades, and  resources.
               </p>
             </div>
           </div>
